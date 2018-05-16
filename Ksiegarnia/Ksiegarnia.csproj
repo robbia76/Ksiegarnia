@@ -12,7 +12,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ksiegarnia</RootNamespace>
+    <RootNamespace>BookStore</RootNamespace>
     <AssemblyName>Ksiegarnia</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
@@ -63,22 +63,337 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Web.Debug.config">
+    <Content Include="BookStore\bin\BookStore.dll.config" />
+    <Content Include="BookStore\bin\roslyn\csc.exe.config" />
+    <Content Include="BookStore\bin\roslyn\csc.rsp" />
+    <Content Include="BookStore\bin\roslyn\csi.exe.config" />
+    <Content Include="BookStore\bin\roslyn\csi.rsp" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="BookStore\bin\roslyn\vbc.exe.config" />
+    <Content Include="BookStore\bin\roslyn\vbc.rsp" />
+    <Content Include="BookStore\bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="BookStore\obj\Debug\BookStore.csproj.CopyComplete" />
+    <Content Include="BookStore\obj\Debug\BookStore.csproj.CoreCompileInputs.cache" />
+    <Content Include="BookStore\obj\Debug\BookStore.csprojResolveAssemblyReference.cache" />
+    <Content Include="BookStore\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="BookStore\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="BookStore\packages.config" />
+    <Content Include="BookStore\Pages\Admin\Admin.Master" />
+    <Content Include="BookStore\Pages\Store.Master" />
+    <Content Include="BookStore\Scripts\jquery-3.3.1.min.map" />
+    <Content Include="BookStore\Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="BookStore\Web.config" />
+    <None Include="BookStore\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <None Include="Web.Release.config">
+    <None Include="BookStore\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="BookStore\bin\Antlr3.Runtime.dll" />
+    <Content Include="BookStore\bin\Antlr3.Runtime.pdb" />
+    <Content Include="BookStore\bin\BookStore.dll" />
+    <Content Include="BookStore\bin\BookStore.pdb" />
+    <Content Include="BookStore\bin\EntityFramework.dll" />
+    <Content Include="BookStore\bin\EntityFramework.SqlServer.dll" />
+    <Content Include="BookStore\bin\EntityFramework.SqlServer.xml" />
+    <Content Include="BookStore\bin\EntityFramework.xml" />
+    <Content Include="BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="BookStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="BookStore\bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="BookStore\bin\Newtonsoft.Json.dll" />
+    <Content Include="BookStore\bin\Newtonsoft.Json.xml" />
+    <Content Include="BookStore\bin\roslyn\csc.exe" />
+    <Content Include="BookStore\bin\roslyn\csi.exe" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="BookStore\bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="BookStore\bin\roslyn\System.AppContext.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Console.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Diagnostics.Process.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="BookStore\bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="BookStore\bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="BookStore\bin\roslyn\System.IO.FileSystem.DriveInfo.dll" />
+    <Content Include="BookStore\bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="BookStore\bin\roslyn\System.IO.Pipes.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Security.AccessControl.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Security.Claims.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Security.Principal.Windows.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Threading.Thread.dll" />
+    <Content Include="BookStore\bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="BookStore\bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="BookStore\bin\roslyn\vbc.exe" />
+    <Content Include="BookStore\bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="BookStore\bin\System.Web.Optimization.dll" />
+    <Content Include="BookStore\bin\System.Web.Optimization.xml" />
+    <Content Include="BookStore\bin\WebGrease.dll" />
+    <Content Include="BookStore\BookStore.csproj" />
+    <Content Include="BookStore\BookStore.csproj.user" />
+    <Content Include="BookStore\Content\AdminStyles.css" />
+    <Content Include="BookStore\Content\Styles.css" />
+    <Content Include="BookStore\Controls\CartSummary.ascx" />
+    <Content Include="BookStore\Controls\CategoryList.ascx" />
+    <Content Include="BookStore\Global.asax" />
+    <Content Include="BookStore\obj\Debug\BookStore.csproj.FileListAbsolute.txt" />
+    <Content Include="BookStore\obj\Debug\BookStore.dll" />
+    <Content Include="BookStore\obj\Debug\BookStore.pdb" />
+    <Content Include="BookStore\Pages\Admin\Books.aspx" />
+    <Content Include="BookStore\Pages\Admin\Orders.aspx" />
+    <Content Include="BookStore\Pages\CartView.aspx" />
+    <Content Include="BookStore\Pages\Checkout.aspx" />
+    <Content Include="BookStore\Pages\Listing.aspx" />
+    <Content Include="BookStore\Pages\Login.aspx" />
+    <None Include="BookStore\Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="BookStore\Scripts\jquery-3.3.1.js" />
+    <Content Include="BookStore\Scripts\jquery-3.3.1.min.js" />
+    <Content Include="BookStore\Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="BookStore\Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="BookStore\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="BookStore\Scripts\jquery.validate.js" />
+    <Content Include="BookStore\Scripts\jquery.validate.min.js" />
+    <Content Include="BookStore\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="BookStore\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="packages\Antlr.3.5.0.2\Antlr.3.5.0.2.nupkg" />
+    <Content Include="packages\EntityFramework.6.2.0\content\net40\App.config.transform" />
+    <Content Include="packages\EntityFramework.6.2.0\content\net40\Web.config.transform" />
+    <Content Include="packages\EntityFramework.6.2.0\EntityFramework.6.2.0.nupkg" />
+    <Content Include="packages\EntityFramework.6.2.0\tools\EntityFramework.psd1" />
+    <Content Include="packages\EntityFramework.6.2.0\tools\EntityFramework.psm1" />
+    <Content Include="packages\EntityFramework.6.2.0\tools\init.ps1" />
+    <Content Include="packages\EntityFramework.6.2.0\tools\install.ps1" />
+    <Content Include="packages\jQuery.3.3.1\Content\Scripts\jquery-3.3.1.min.map" />
+    <Content Include="packages\jQuery.3.3.1\Content\Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="packages\jQuery.3.3.1\jQuery.3.3.1.nupkg" />
+    <Content Include="packages\jQuery.3.3.1\Tools\common.ps1" />
+    <Content Include="packages\jQuery.3.3.1\Tools\install.ps1" />
+    <Content Include="packages\jQuery.3.3.1\Tools\uninstall.ps1" />
+    <Content Include="packages\jQuery.Validation.1.16.0\jQuery.Validation.1.16.0.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\content\net45\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\content\net45\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\content\net46\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\content\net46\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\tools\net45\install.ps1" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\tools\net45\uninstall.ps1" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.3\Microsoft.jQuery.Unobtrusive.Validation.3.2.3.nupkg" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\Microsoft.Net.Compilers.2.6.1.nupkg" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\ThirdPartyNotices.rtf" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\csc.exe.config" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\csc.rsp" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\csi.exe.config" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\csi.rsp" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\vbc.exe.config" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\vbc.rsp" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\VBCSCompiler.exe.config" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\LICENSE.md" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\Newtonsoft.Json.10.0.3.nupkg" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\tools\install.ps1" />
+    <Content Include="packages\WebGrease.1.6.0\WebGrease.1.6.0.nupkg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.pdb" />
+    <Content Include="packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.2.0\lib\net40\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.2.0\lib\net45\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.2.0\tools\about_EntityFramework.help.txt" />
+    <Content Include="packages\EntityFramework.6.2.0\tools\EntityFramework.PowerShell.dll" />
+    <Content Include="packages\EntityFramework.6.2.0\tools\EntityFramework.PowerShell.Utility.dll" />
+    <Content Include="packages\EntityFramework.6.2.0\tools\migrate.exe" />
+    <None Include="packages\jQuery.3.3.1\Content\Scripts\jquery-3.3.1-vsdoc.js" />
+    <Content Include="packages\jQuery.3.3.1\Content\Scripts\jquery-3.3.1.js" />
+    <Content Include="packages\jQuery.3.3.1\Content\Scripts\jquery-3.3.1.min.js" />
+    <Content Include="packages\jQuery.3.3.1\Content\Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="packages\jQuery.3.3.1\Content\Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="packages\jQuery.3.3.1\Tools\jquery-3.3.1.intellisense.js" />
+    <None Include="packages\jQuery.Validation.1.16.0\Content\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="packages\jQuery.Validation.1.16.0\Content\Scripts\jquery.validate.js" />
+    <Content Include="packages\jQuery.Validation.1.16.0\Content\Scripts\jquery.validate.min.js" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\system.web.optimization.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.3\Content\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.3\Content\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\csc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\csi.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\Microsoft.Win32.Primitives.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Console.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Diagnostics.Process.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.IO.Compression.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.IO.FileSystem.DriveInfo.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.IO.Pipes.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Security.AccessControl.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Security.Claims.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Security.Principal.Windows.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Text.Encoding.CodePages.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Threading.Thread.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.ValueTuple.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Xml.ReaderWriter.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Xml.XmlDocument.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Xml.XPath.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\System.Xml.XPath.XDocument.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\vbc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.2.6.1\tools\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\netstandard1.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\netstandard1.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\WebGrease.1.6.0\lib\WebGrease.dll" />
+    <Content Include="packages\WebGrease.1.6.0\tools\WG.EXE" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookStore\App_Start\BundleConfig.cs" />
+    <Compile Include="BookStore\App_Start\RouteConfig.cs" />
+    <Compile Include="BookStore\Controls\CartSummary.ascx.cs">
+      <DependentUpon>CartSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Controls\CartSummary.ascx.designer.cs">
+      <DependentUpon>CartSummary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Controls\CategoryList.ascx.cs">
+      <DependentUpon>CategoryList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Controls\CategoryList.ascx.designer.cs">
+      <DependentUpon>CategoryList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Controls\VInput.cs" />
+    <Compile Include="BookStore\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Models\Book.cs" />
+    <Compile Include="BookStore\Models\Cart.cs" />
+    <Compile Include="BookStore\Models\Order.cs" />
+    <Compile Include="BookStore\Models\Repository\EFDbContext.cs" />
+    <Compile Include="BookStore\Models\Repository\Repository.cs" />
+    <Compile Include="BookStore\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="BookStore\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="BookStore\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="BookStore\Pages\Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Pages\Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Pages\Admin\Books.aspx.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Pages\Admin\Books.aspx.designer.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Pages\Admin\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Pages\Admin\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Pages\CartView.aspx.cs">
+      <DependentUpon>CartView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Pages\CartView.aspx.designer.cs">
+      <DependentUpon>CartView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Pages\Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Pages\Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Pages\Helpers\SessionHelper.cs" />
+    <Compile Include="BookStore\Pages\Listing.aspx.cs">
+      <DependentUpon>Listing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Pages\Listing.aspx.designer.cs">
+      <DependentUpon>Listing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Pages\Store.Master.cs">
+      <DependentUpon>Store.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStore\Pages\Store.Master.designer.cs">
+      <DependentUpon>Store.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BookStore\Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="test\" />
+    <Folder Include="BookStore\obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
