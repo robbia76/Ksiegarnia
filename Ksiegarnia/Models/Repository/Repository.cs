@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
-//
+
 namespace Ksiegarnia.Models.Repository
 {
     public class Repository
@@ -15,7 +15,7 @@ namespace Ksiegarnia.Models.Repository
             get { return context.Books; }
         }
 
-        
+        // Чтение данных из таблицы Orders
         public IEnumerable<Order> Orders
         {
             get
