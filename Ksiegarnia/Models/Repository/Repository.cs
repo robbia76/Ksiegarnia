@@ -4,7 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 
+<<<<<<< HEAD
 namespace Ksiegarnia.Models.Repository
+=======
+namespace BookStore.Models.Repository
+>>>>>>> 31b0bdd2adb99b65805a6cf394113d6a2a0a7167
 {
     public class Repository
     {
@@ -37,9 +41,18 @@ namespace Ksiegarnia.Models.Repository
                 if (dbBook != null)
                 {
                     dbBook.Name = book.Name;
+<<<<<<< HEAD
                     dbBook.Description = book.Description;
                     dbBook.Price = book.Price;
                     dbBook.Category = book.Category;
+=======
+                    dbBook.Author = book.Author;
+                    dbBook.Description = book.Description;
+                    dbBook.Price = book.Price;
+                    dbBook.Category = book.Category;
+                    dbBook.ImageData = book.ImageData;
+                    dbBook.ImageMimeType = book.ImageMimeType;
+>>>>>>> 31b0bdd2adb99b65805a6cf394113d6a2a0a7167
                 }
             }
             context.SaveChanges();

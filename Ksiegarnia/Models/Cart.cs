@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+<<<<<<< HEAD
 namespace Ksiegarnia.Models
+=======
+namespace BookStore.Models
+>>>>>>> 31b0bdd2adb99b65805a6cf394113d6a2a0a7167
 {
     public class Cart
     {
